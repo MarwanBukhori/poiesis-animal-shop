@@ -23,3 +23,4 @@ C:\Users\User\Desktop\prj_poiesis_a174856\prj_poiesis_a174856\obj\Debug\prj_poie
 C:\Users\User\Desktop\prj_poiesis_a174856\prj_poiesis_a174856\obj\Debug\prj_poiesis_a174856.vbprojAssemblyReference.cache
 C:\Users\User\Desktop\prj_poiesis_a174856\prj_poiesis_a174856\obj\Debug\prj_poiesis_a174856.frm_makeorder_A174856.resources
 C:\Users\User\Desktop\prj_poiesis_a174856\prj_poiesis_a174856\obj\Debug\prj_poiesis_a174856.frm_transaction_A174856.resources
+C:\Users\User\Desktop\prj_poiesis_a174856\prj_poiesis_a174856\obj\Debug\prj_poiesis_a174856.frm_splashscreen_A174856.resources

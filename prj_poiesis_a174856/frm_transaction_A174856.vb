@@ -5,8 +5,6 @@
 
     Private Sub frm_transaction_A174856_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-
-
         Dim mysql As String = "SELECT DISTINCT FLD_ORDER_ID FROM TBL_TRANSACTION_A174856"
         Dim mydatatable As New DataTable
         Dim myreader As New OleDb.OleDbDataAdapter(mysql, myconnection)
@@ -16,6 +14,7 @@
 
         lb_order.DisplayMember = "FLD_ORDER_ID"
         refresh_order(lb_order.Text)
+
     End Sub
 
 
@@ -28,6 +27,13 @@
         grd_order.DataSource = mydatatable
 
     End Sub
+
+
+    Private Sub refresh_price()
+
+
+    End Sub
+
 
 
 
@@ -48,5 +54,9 @@
     Private Sub btn_order_Click(sender As Object, e As EventArgs) Handles btn_order.Click
         frm_makeorder_A174856.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+
     End Sub
 End Class

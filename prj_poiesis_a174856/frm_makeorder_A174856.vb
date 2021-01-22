@@ -3,7 +3,7 @@
     Dim number As Double
     Dim prod_price As Double
     Dim c As String
-    Dim duit As Double
+    Dim jumlah As Double
     Dim prod_quantity As Integer
     Dim current_code As String
     Dim current_code1 As String
@@ -174,19 +174,19 @@
 
 
 
-
     End Sub
 
     Private Sub refresh_price()
 
         If grd_orderlist.RowCount > 0 Then
-            duit = 0
+            jumlah = 0
 
             For index As Integer = 0 To grd_orderlist.RowCount - 1
-                duit += Convert.ToDouble(grd_orderlist.Rows(index).Cells(3).Value)
+                jumlah += Convert.ToDouble(grd_orderlist.Rows(index).Cells(3).Value)
             Next
 
-            lbl_totally.Text = "RM " & duit
+            lbl_totally.Text = "RM " & jumlah
+
         ElseIf grd_orderlist.RowCount = 1 Then
 
         End If
@@ -196,9 +196,7 @@
         prod_quantity = lbl_quantity.Value
         prod_price = lbl_price.Text()
         lbl_total.Text = prod_quantity * prod_price
-
     End Sub
-
 
 
     Private Sub lb_prod_MouseClick(sender As Object, e As MouseEventArgs) Handles lb_prod.MouseClick
@@ -217,6 +215,7 @@
 
 
     Private Sub btn_remove_Click(sender As Object, e As EventArgs) Handles btn_remove.Click
+
         Dim delete_msg = MsgBox("Confirm to delete this item from list?", MsgBoxStyle.YesNo)
 
         If delete_msg = MsgBoxResult.Yes Then
@@ -229,6 +228,7 @@
 
 
     Private Sub btn_confirm_Click(sender As Object, e As EventArgs) Handles btn_confirm.Click
+
         Dim mytransaction As OleDb.OleDbTransaction
         myconnection2.Open()
 
@@ -266,12 +266,12 @@
             refresh_order()
 
         Catch ex As Exception
+
             Beep()
-            MsgBox("Cannot add repeating products, please delete and try again.")
+            MsgBox("Please check for repeating products or product ID mistaken.")
             MsgBox("Problem with transaction:" & vbCrLf & vbCrLf & ex.Message)
             mytransaction.Rollback()
             myconnection2.Close()
-
 
         End Try
 
@@ -292,15 +292,5 @@
         frm_transaction_A174856.Show()
     End Sub
 
-    Private Sub pic_box_Click(sender As Object, e As EventArgs) Handles pic_box.Click
 
-    End Sub
-
-    Private Sub Label22_Click(sender As Object, e As EventArgs) Handles Label22.Click
-
-    End Sub
-
-    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
-
-    End Sub
 End Class
