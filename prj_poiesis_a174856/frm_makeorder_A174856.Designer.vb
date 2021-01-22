@@ -617,7 +617,7 @@ Partial Class frm_makeorder_A174856
         '
         Me.Panel6.BackColor = System.Drawing.Color.White
         Me.Panel6.Controls.Add(Me.GroupBox5)
-        Me.Panel6.Location = New System.Drawing.Point(229, 524)
+        Me.Panel6.Location = New System.Drawing.Point(229, 535)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(308, 247)
         Me.Panel6.TabIndex = 23
@@ -638,7 +638,7 @@ Partial Class frm_makeorder_A174856
         '
         Me.Label22.AutoSize = True
         Me.Label22.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label22.Location = New System.Drawing.Point(21, 125)
+        Me.Label22.Location = New System.Drawing.Point(20, 135)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(217, 18)
         Me.Label22.TabIndex = 2
@@ -648,7 +648,7 @@ Partial Class frm_makeorder_A174856
         '
         Me.Label21.AutoSize = True
         Me.Label21.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.Location = New System.Drawing.Point(22, 88)
+        Me.Label21.Location = New System.Drawing.Point(21, 88)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(175, 18)
         Me.Label21.TabIndex = 1
@@ -658,7 +658,7 @@ Partial Class frm_makeorder_A174856
         '
         Me.Label20.AutoSize = True
         Me.Label20.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.Location = New System.Drawing.Point(21, 51)
+        Me.Label20.Location = New System.Drawing.Point(20, 44)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(195, 18)
         Me.Label20.TabIndex = 0
