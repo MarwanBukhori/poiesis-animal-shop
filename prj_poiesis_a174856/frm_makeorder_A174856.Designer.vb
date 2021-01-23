@@ -708,11 +708,14 @@ Partial Class frm_makeorder_A174856
         'grd_orderlist
         '
         Me.grd_orderlist.AllowUserToAddRows = False
+        Me.grd_orderlist.AllowUserToDeleteRows = False
         Me.grd_orderlist.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.grd_orderlist.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         Me.grd_orderlist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.grd_orderlist.Location = New System.Drawing.Point(6, 21)
+        Me.grd_orderlist.MultiSelect = False
         Me.grd_orderlist.Name = "grd_orderlist"
+        Me.grd_orderlist.ReadOnly = True
         Me.grd_orderlist.RowHeadersWidth = 51
         Me.grd_orderlist.RowTemplate.Height = 24
         Me.grd_orderlist.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect

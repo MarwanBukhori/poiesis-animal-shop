@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frm_transaction_A174856
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frm_transaction_A174856
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btn_order = New System.Windows.Forms.Button()
@@ -35,14 +35,6 @@ Partial Class frm_transaction_A174856
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.lbl_quantity = New System.Windows.Forms.Label()
-        Me.tb_quantity = New System.Windows.Forms.TextBox()
-        Me.tb_prod_id = New System.Windows.Forms.TextBox()
-        Me.lbl_prod_id = New System.Windows.Forms.Label()
-        Me.lbl_price = New System.Windows.Forms.Label()
-        Me.lbl_price_each = New System.Windows.Forms.Label()
-        Me.tb_price_each = New System.Windows.Forms.TextBox()
-        Me.tb_price = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.grd_order, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -104,7 +96,7 @@ Partial Class frm_transaction_A174856
         Me.lbl_order.AutoSize = True
         Me.lbl_order.Font = New System.Drawing.Font("Century Gothic", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_order.ForeColor = System.Drawing.Color.Black
-        Me.lbl_order.Location = New System.Drawing.Point(950, 156)
+        Me.lbl_order.Location = New System.Drawing.Point(950, 115)
         Me.lbl_order.Name = "lbl_order"
         Me.lbl_order.Size = New System.Drawing.Size(63, 34)
         Me.lbl_order.TabIndex = 2
@@ -115,7 +107,7 @@ Partial Class frm_transaction_A174856
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.Black
-        Me.Label4.Location = New System.Drawing.Point(894, 124)
+        Me.Label4.Location = New System.Drawing.Point(894, 83)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(102, 23)
         Me.Label4.TabIndex = 5
@@ -127,12 +119,12 @@ Partial Class frm_transaction_A174856
         Me.grd_order.AllowUserToDeleteRows = False
         Me.grd_order.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.grd_order.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.grd_order.Location = New System.Drawing.Point(376, 156)
+        Me.grd_order.Location = New System.Drawing.Point(402, 187)
         Me.grd_order.Name = "grd_order"
         Me.grd_order.RowHeadersWidth = 51
         Me.grd_order.RowTemplate.Height = 24
         Me.grd_order.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.grd_order.Size = New System.Drawing.Size(419, 363)
+        Me.grd_order.Size = New System.Drawing.Size(598, 363)
         Me.grd_order.TabIndex = 6
         '
         'Label3
@@ -190,100 +182,12 @@ Partial Class frm_transaction_A174856
         Me.Label7.TabIndex = 11
         Me.Label7.Text = "Manager"
         '
-        'lbl_quantity
-        '
-        Me.lbl_quantity.AutoSize = True
-        Me.lbl_quantity.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_quantity.ForeColor = System.Drawing.Color.Black
-        Me.lbl_quantity.Location = New System.Drawing.Point(852, 286)
-        Me.lbl_quantity.Name = "lbl_quantity"
-        Me.lbl_quantity.Size = New System.Drawing.Size(77, 20)
-        Me.lbl_quantity.TabIndex = 13
-        Me.lbl_quantity.Text = "QUANTITY"
-        '
-        'tb_quantity
-        '
-        Me.tb_quantity.Location = New System.Drawing.Point(956, 284)
-        Me.tb_quantity.Name = "tb_quantity"
-        Me.tb_quantity.ReadOnly = True
-        Me.tb_quantity.Size = New System.Drawing.Size(100, 22)
-        Me.tb_quantity.TabIndex = 16
-        Me.tb_quantity.Text = "0"
-        '
-        'tb_prod_id
-        '
-        Me.tb_prod_id.Location = New System.Drawing.Point(955, 230)
-        Me.tb_prod_id.Name = "tb_prod_id"
-        Me.tb_prod_id.ReadOnly = True
-        Me.tb_prod_id.Size = New System.Drawing.Size(100, 22)
-        Me.tb_prod_id.TabIndex = 15
-        '
-        'lbl_prod_id
-        '
-        Me.lbl_prod_id.AutoSize = True
-        Me.lbl_prod_id.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_prod_id.ForeColor = System.Drawing.Color.Black
-        Me.lbl_prod_id.Location = New System.Drawing.Point(830, 232)
-        Me.lbl_prod_id.Name = "lbl_prod_id"
-        Me.lbl_prod_id.Size = New System.Drawing.Size(99, 20)
-        Me.lbl_prod_id.TabIndex = 12
-        Me.lbl_prod_id.Text = "PRODUCT ID"
-        '
-        'lbl_price
-        '
-        Me.lbl_price.AutoSize = True
-        Me.lbl_price.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_price.ForeColor = System.Drawing.Color.Black
-        Me.lbl_price.Location = New System.Drawing.Point(852, 399)
-        Me.lbl_price.Name = "lbl_price"
-        Me.lbl_price.Size = New System.Drawing.Size(83, 20)
-        Me.lbl_price.TabIndex = 17
-        Me.lbl_price.Text = "SUB PRICE"
-        '
-        'lbl_price_each
-        '
-        Me.lbl_price_each.AutoSize = True
-        Me.lbl_price_each.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_price_each.ForeColor = System.Drawing.Color.Black
-        Me.lbl_price_each.Location = New System.Drawing.Point(838, 345)
-        Me.lbl_price_each.Name = "lbl_price_each"
-        Me.lbl_price_each.Size = New System.Drawing.Size(97, 20)
-        Me.lbl_price_each.TabIndex = 19
-        Me.lbl_price_each.Text = "PRICE EACH"
-        '
-        'tb_price_each
-        '
-        Me.tb_price_each.Location = New System.Drawing.Point(956, 345)
-        Me.tb_price_each.Name = "tb_price_each"
-        Me.tb_price_each.ReadOnly = True
-        Me.tb_price_each.Size = New System.Drawing.Size(100, 22)
-        Me.tb_price_each.TabIndex = 20
-        '
-        'tb_price
-        '
-        Me.tb_price.AutoSize = True
-        Me.tb_price.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tb_price.ForeColor = System.Drawing.Color.Black
-        Me.tb_price.Location = New System.Drawing.Point(960, 399)
-        Me.tb_price.Name = "tb_price"
-        Me.tb_price.Size = New System.Drawing.Size(57, 23)
-        Me.tb_price.TabIndex = 21
-        Me.tb_price.Text = "      0"
-        '
         'frm_transaction_A174856
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1112, 737)
-        Me.Controls.Add(Me.tb_price)
-        Me.Controls.Add(Me.tb_price_each)
-        Me.Controls.Add(Me.lbl_price_each)
-        Me.Controls.Add(Me.lbl_price)
-        Me.Controls.Add(Me.tb_quantity)
-        Me.Controls.Add(Me.tb_prod_id)
-        Me.Controls.Add(Me.lbl_quantity)
-        Me.Controls.Add(Me.lbl_prod_id)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label1)
@@ -317,12 +221,4 @@ Partial Class frm_transaction_A174856
     Friend WithEvents Label6 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Label7 As Label
-    Friend WithEvents lbl_quantity As Label
-    Friend WithEvents tb_quantity As TextBox
-    Friend WithEvents tb_prod_id As TextBox
-    Friend WithEvents lbl_prod_id As Label
-    Friend WithEvents lbl_price As Label
-    Friend WithEvents lbl_price_each As Label
-    Friend WithEvents tb_price_each As TextBox
-    Friend WithEvents tb_price As Label
 End Class
