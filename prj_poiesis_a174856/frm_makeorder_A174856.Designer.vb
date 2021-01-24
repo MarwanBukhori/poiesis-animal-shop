@@ -22,6 +22,7 @@ Partial Class frm_makeorder_A174856
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_makeorder_A174856))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
@@ -74,7 +75,6 @@ Partial Class frm_makeorder_A174856
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
-        Me.Label22 = New System.Windows.Forms.Label()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.btn_exit = New System.Windows.Forms.Button()
@@ -84,6 +84,7 @@ Partial Class frm_makeorder_A174856
         Me.grd_orderlist = New System.Windows.Forms.DataGridView()
         Me.btn_confirm = New System.Windows.Forms.Button()
         Me.btn_remove = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         Me.pnl_staff.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -97,6 +98,7 @@ Partial Class frm_makeorder_A174856
         Me.GroupBox5.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
         CType(Me.grd_orderlist, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -143,6 +145,7 @@ Partial Class frm_makeorder_A174856
         '
         Me.pnl_staff.BackColor = System.Drawing.Color.White
         Me.pnl_staff.Controls.Add(Me.Label18)
+        Me.pnl_staff.Controls.Add(Me.Label21)
         Me.pnl_staff.Controls.Add(Me.lbl_totally)
         Me.pnl_staff.Controls.Add(Me.GroupBox1)
         Me.pnl_staff.Controls.Add(Me.lb_prod)
@@ -224,12 +227,15 @@ Partial Class frm_makeorder_A174856
         '
         'btn_addcart
         '
+        Me.btn_addcart.BackColor = System.Drawing.Color.Black
+        Me.btn_addcart.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_addcart.ForeColor = System.Drawing.Color.White
         Me.btn_addcart.Location = New System.Drawing.Point(113, 431)
         Me.btn_addcart.Name = "btn_addcart"
         Me.btn_addcart.Size = New System.Drawing.Size(139, 34)
         Me.btn_addcart.TabIndex = 24
         Me.btn_addcart.Text = "ADD CART"
-        Me.btn_addcart.UseVisualStyleBackColor = True
+        Me.btn_addcart.UseVisualStyleBackColor = False
         '
         'lbl_quantity
         '
@@ -392,6 +398,7 @@ Partial Class frm_makeorder_A174856
         Me.Panel5.BackColor = System.Drawing.Color.White
         Me.Panel5.Controls.Add(Me.btn_new_order)
         Me.Panel5.Controls.Add(Me.Label10)
+        Me.Panel5.Controls.Add(Me.Label20)
         Me.Panel5.Controls.Add(Me.Label9)
         Me.Panel5.Controls.Add(Me.Label8)
         Me.Panel5.Controls.Add(Me.lbl_date)
@@ -413,12 +420,15 @@ Partial Class frm_makeorder_A174856
         '
         'btn_new_order
         '
+        Me.btn_new_order.BackColor = System.Drawing.Color.Black
+        Me.btn_new_order.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_new_order.ForeColor = System.Drawing.Color.White
         Me.btn_new_order.Location = New System.Drawing.Point(198, 404)
         Me.btn_new_order.Name = "btn_new_order"
         Me.btn_new_order.Size = New System.Drawing.Size(185, 48)
         Me.btn_new_order.TabIndex = 24
         Me.btn_new_order.Text = "CREATE NEW ORDER"
-        Me.btn_new_order.UseVisualStyleBackColor = True
+        Me.btn_new_order.UseVisualStyleBackColor = False
         '
         'Label10
         '
@@ -594,7 +604,7 @@ Partial Class frm_makeorder_A174856
         Me.lbl_staff.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lbl_staff.Font = New System.Drawing.Font("Century Gothic", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_staff.ForeColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.lbl_staff.Location = New System.Drawing.Point(185, 44)
+        Me.lbl_staff.Location = New System.Drawing.Point(185, 32)
         Me.lbl_staff.Name = "lbl_staff"
         Me.lbl_staff.Size = New System.Drawing.Size(190, 23)
         Me.lbl_staff.TabIndex = 4
@@ -624,31 +634,18 @@ Partial Class frm_makeorder_A174856
         '
         'GroupBox5
         '
-        Me.GroupBox5.Controls.Add(Me.Label22)
-        Me.GroupBox5.Controls.Add(Me.Label21)
-        Me.GroupBox5.Controls.Add(Me.Label20)
+        Me.GroupBox5.Controls.Add(Me.PictureBox1)
         Me.GroupBox5.Location = New System.Drawing.Point(16, 18)
         Me.GroupBox5.Name = "GroupBox5"
         Me.GroupBox5.Size = New System.Drawing.Size(273, 212)
         Me.GroupBox5.TabIndex = 0
         Me.GroupBox5.TabStop = False
-        Me.GroupBox5.Text = "Instruction"
-        '
-        'Label22
-        '
-        Me.Label22.AutoSize = True
-        Me.Label22.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label22.Location = New System.Drawing.Point(20, 135)
-        Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(217, 18)
-        Me.Label22.TabIndex = 2
-        Me.Label22.Text = "3.  Confirm purchase if done"
         '
         'Label21
         '
         Me.Label21.AutoSize = True
         Me.Label21.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.Location = New System.Drawing.Point(21, 88)
+        Me.Label21.Location = New System.Drawing.Point(35, 11)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(175, 18)
         Me.Label21.TabIndex = 1
@@ -658,7 +655,7 @@ Partial Class frm_makeorder_A174856
         '
         Me.Label20.AutoSize = True
         Me.Label20.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.Location = New System.Drawing.Point(20, 44)
+        Me.Label20.Location = New System.Drawing.Point(180, 61)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(195, 18)
         Me.Label20.TabIndex = 0
@@ -666,21 +663,27 @@ Partial Class frm_makeorder_A174856
         '
         'btn_exit
         '
-        Me.btn_exit.Location = New System.Drawing.Point(395, 805)
+        Me.btn_exit.BackColor = System.Drawing.Color.Black
+        Me.btn_exit.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_exit.ForeColor = System.Drawing.Color.White
+        Me.btn_exit.Location = New System.Drawing.Point(392, 805)
         Me.btn_exit.Name = "btn_exit"
-        Me.btn_exit.Size = New System.Drawing.Size(102, 34)
+        Me.btn_exit.Size = New System.Drawing.Size(126, 34)
         Me.btn_exit.TabIndex = 22
         Me.btn_exit.Text = "EXIT"
-        Me.btn_exit.UseVisualStyleBackColor = True
+        Me.btn_exit.UseVisualStyleBackColor = False
         '
         'btn_back
         '
-        Me.btn_back.Location = New System.Drawing.Point(283, 806)
+        Me.btn_back.BackColor = System.Drawing.Color.Black
+        Me.btn_back.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_back.ForeColor = System.Drawing.Color.White
+        Me.btn_back.Location = New System.Drawing.Point(245, 805)
         Me.btn_back.Name = "btn_back"
-        Me.btn_back.Size = New System.Drawing.Size(100, 34)
+        Me.btn_back.Size = New System.Drawing.Size(134, 34)
         Me.btn_back.TabIndex = 21
         Me.btn_back.Text = "BACK"
-        Me.btn_back.UseVisualStyleBackColor = True
+        Me.btn_back.UseVisualStyleBackColor = False
         '
         'GroupBox4
         '
@@ -698,12 +701,15 @@ Partial Class frm_makeorder_A174856
         '
         'btn_invoice
         '
-        Me.btn_invoice.Location = New System.Drawing.Point(483, 274)
+        Me.btn_invoice.BackColor = System.Drawing.Color.Black
+        Me.btn_invoice.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_invoice.ForeColor = System.Drawing.Color.White
+        Me.btn_invoice.Location = New System.Drawing.Point(483, 275)
         Me.btn_invoice.Name = "btn_invoice"
         Me.btn_invoice.Size = New System.Drawing.Size(139, 34)
         Me.btn_invoice.TabIndex = 23
         Me.btn_invoice.Text = "INVOICE"
-        Me.btn_invoice.UseVisualStyleBackColor = True
+        Me.btn_invoice.UseVisualStyleBackColor = False
         '
         'grd_orderlist
         '
@@ -724,21 +730,37 @@ Partial Class frm_makeorder_A174856
         '
         'btn_confirm
         '
-        Me.btn_confirm.Location = New System.Drawing.Point(175, 274)
+        Me.btn_confirm.BackColor = System.Drawing.Color.Black
+        Me.btn_confirm.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_confirm.ForeColor = System.Drawing.Color.White
+        Me.btn_confirm.Location = New System.Drawing.Point(175, 275)
         Me.btn_confirm.Name = "btn_confirm"
         Me.btn_confirm.Size = New System.Drawing.Size(139, 34)
         Me.btn_confirm.TabIndex = 21
         Me.btn_confirm.Text = "CONFIRM"
-        Me.btn_confirm.UseVisualStyleBackColor = True
+        Me.btn_confirm.UseVisualStyleBackColor = False
         '
         'btn_remove
         '
-        Me.btn_remove.Location = New System.Drawing.Point(328, 274)
+        Me.btn_remove.BackColor = System.Drawing.Color.Black
+        Me.btn_remove.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_remove.ForeColor = System.Drawing.Color.White
+        Me.btn_remove.Location = New System.Drawing.Point(328, 275)
         Me.btn_remove.Name = "btn_remove"
         Me.btn_remove.Size = New System.Drawing.Size(139, 34)
         Me.btn_remove.TabIndex = 22
         Me.btn_remove.Text = "REMOVE"
-        Me.btn_remove.UseVisualStyleBackColor = True
+        Me.btn_remove.UseVisualStyleBackColor = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(-12, 10)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(295, 187)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
         '
         'frm_makeorder_A174856
         '
@@ -769,9 +791,9 @@ Partial Class frm_makeorder_A174856
         Me.Panel2.ResumeLayout(False)
         Me.Panel6.ResumeLayout(False)
         Me.GroupBox5.ResumeLayout(False)
-        Me.GroupBox5.PerformLayout()
         Me.GroupBox4.ResumeLayout(False)
         CType(Me.grd_orderlist, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -835,7 +857,7 @@ Partial Class frm_makeorder_A174856
     Friend WithEvents btn_addcart As Button
     Friend WithEvents lbl_post As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents Label22 As Label
     Friend WithEvents Label21 As Label
     Friend WithEvents Label20 As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

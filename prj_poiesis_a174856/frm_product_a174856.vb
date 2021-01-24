@@ -53,11 +53,5 @@
         Application.Exit()
     End Sub
 
-    Private Sub lb_prod_SelectedIndexChanged(sender As Object, e As EventArgs)
 
-    End Sub
-
-    Private Sub lb_prod_SelectedIndexChanged_1(sender As Object, e As EventArgs) Handles lb_prod.SelectedIndexChanged
-
-    End Sub
 End Class

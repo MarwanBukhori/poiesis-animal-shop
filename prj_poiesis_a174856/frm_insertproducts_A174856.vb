@@ -19,12 +19,6 @@
         Return newmatric
     End Function
 
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles grd_products.CellContentClick
-
-    End Sub
-
-
-
     Private Sub btn_insert_Click(sender As Object, e As EventArgs) Handles btn_insert.Click
 
         Dim mysql As String = "INSERT INTO TBL_PRODUCTS_A174856 VALUES ('" & txt_id.Text & "', '" & txt_name.Text & "', '" & txt_price.Text & "','" & txt_type.Text & "' ,'" & txt_weight.Text & "' ,'" & txt_desc.Text & "' ,'" & txt_quantity.Text & "' )"

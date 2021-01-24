@@ -2,12 +2,8 @@
 
     Dim number As Double
     Dim prod_price As Double
-    Dim c As String
     Dim jumlah As Double
     Dim prod_quantity As Integer
-    Dim current_code As String
-    Dim current_code1 As String
-    Dim current_code2 As String
 
 
     Private Sub frm_makeorder_A174856_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -295,4 +291,6 @@
     Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
 
     End Sub
+
+
 End Class

@@ -74,4 +74,7 @@ WHERE FLD_ORDER_ID = '" & orderid & "';"
         Me.Hide()
     End Sub
 
+    Private Sub lbl_totally_Click(sender As Object, e As EventArgs) Handles lbl_totally.Click
+
+    End Sub
 End Class

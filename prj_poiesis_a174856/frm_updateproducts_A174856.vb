@@ -55,18 +55,6 @@
     End Sub
 
     Private Sub btn_update_Click(sender As Object, e As EventArgs) Handles btn_update.Click
-        'run_sql_command("UPDATE TBL_PRODUCTS_A174856 SET FLD_PRODUCT_NAME='" & txt_newproductname.Text & "' WHERE FLD_PRODUCT_ID='" & current_code & "'")
-
-        'run_sql_command("UPDATE TBL_PRODUCTS_A174856 SET FLD_PRICE='" & txt_newprice.Text & "' WHERE FLD_PRODUCT_ID='" & current_code & "'")
-
-        'run_sql_command("UPDATE TBL_PRODUCTS_A174856 SET FLD_GENRE='" & txt_newgenre.Text & "' WHERE FLD_PRODUCT_ID='" & current_code & "'")
-
-        'run_sql_command("UPDATE TBL_PRODUCTS_A174856 SET FLD_PLAYABLE='" & txt_newplayable.Text & "' WHERE FLD_PRODUCT_ID='" & current_code & "'")
-
-        'run_sql_command("UPDATE TBL_PRODUCTS_A174856 SET FLD_RELEASED='" & txt_newreleased.Text & "' WHERE FLD_PRODUCT_ID='" & current_code & "'")
-
-        'run_sql_command("UPDATE TBL_PRODUCTS_A174856 SET FLD_TYPE='" & txt_newtype.Text & "' WHERE FLD_PRODUCT_ID='" & current_code & "'")
-
         run_sql_command("UPDATE TBL_PRODUCTS_A174856 SET FLD_PRODUCT_NAME='" & txt_name.Text & "', FLD_PRICE='" & txt_price.Text & "', FLD_TYPE='" & txt_type.Text & "', FLD_WEIGHT='" & txt_weight.Text & "', FLD_DESCRIPTION='" & txt_desc.Text & "', FLD_ORIGIN='" & txt_quantity.Text & "'WHERE FLD_PRODUCT_ID='" & current_code & "'")
 
         Beep()
@@ -116,7 +104,5 @@
         Application.Exit()
     End Sub
 
-    Private Sub grd_products_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles grd_products.CellContentClick
 
-    End Sub
 End Class
